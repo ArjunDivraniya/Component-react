@@ -1,0 +1,11 @@
+.meal{
+    color: black;
+}
+.mealform{
+    position: sticky; 
+    top: 80px;
+    z-index: 1000;
+}
+.display{
+    display: grid;
+}
