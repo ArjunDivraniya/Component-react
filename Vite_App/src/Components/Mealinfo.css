@@ -1,0 +1,167 @@
+/* General styles for the meal info container */
+.mealinfo {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #ffefe3, #ffe2e2);
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .info {
+    width: 90%;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .info > div:first-child {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff5722;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .first {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .first img {
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Meal details next to the image */
+  .chotu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .chotu p {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .Instrutions {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #ff5722;
+    border-radius: 8px;
+  }
+  
+  .Instrutions p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+  }
+  
+  /* Ingredients and Measures section */
+  .itemsofmeal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  
+  .Ingredient, .measure {
+    flex: 1;
+    min-width: 300px;
+    background: #fefefe;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  .Ingredient ul, .measure ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .Ingredient li, .measure li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .Ingredient li::before, .measure li::before {
+    content: "✔";
+    color: #ff5722;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+  
+  .text1, .text2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5722;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* Recipe Video button */
+  button {
+    background: #ff5722;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background: #d84315;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .first {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .first img {
+      width: 100%;
+      max-width: 400px;
+    }
+  
+    .Ingredient, .measure {
+      min-width: 100%;
+      margin: 10px 0;
+    }
+  
+    .Instrutions {
+      margin-top: 15px;
+    }
+  }
+  

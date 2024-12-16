@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import './indianbank.css'
 
 const Indianbank = () => {
-  return (
-    <div>
-      Indianbank
-    </div>
-  )
+
+  
 }
 
 export default Indianbank
