@@ -143,25 +143,4 @@
     background: #d84315;
   }
   
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .first {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .first img {
-      width: 100%;
-      max-width: 400px;
-    }
-  
-    .Ingredient, .measure {
-      min-width: 100%;
-      margin: 10px 0;
-    }
-  
-    .Instrutions {
-      margin-top: 15px;
-    }
-  }
-  
+ 

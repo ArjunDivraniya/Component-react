@@ -1,0 +1,143 @@
+/* .cockimg{
+background-image: url(https://www.freewebheaders.com/wp-content/gallery/drinks/cache/red-bg-beverages-header.jpg-nggid03655-ngg0dyn-1280x375x100-00f0w010c010r110f110r010t010.jpg);
+width: 100%;
+height: 500px;
+background-size: cover;
+}
+.text{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    color: white;
+    position: relative;
+top: 140px;
+left: 550px;
+
+} */
+
+
+/* Scoped Styling for Coketail Component */
+
+/* Container Background */
+.cockimg {
+    width: 100%;
+    height: 400px;
+    background: url(https://www.freewebheaders.com/wp-content/gallery/drinks/cache/red-bg-beverages-header.jpg-nggid03655-ngg0dyn-1280x375x100-00f0w010c010r110f110r010t010.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .cockimg .text {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffcc00; /* Neon yellow */
+    text-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900, 0 0 60px #ff6600;
+    text-transform: uppercase;
+    animation: glow 1.5s infinite alternate;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 700px;
+    color: white;
+    /* position: relative;
+top: 140px;
+left: 550px; */
+  }
+  
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px #ffcc00, 0 0 20px #ff9900, 0 0 30px #ff6600;
+    }
+    to {
+      text-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900, 0 0 60px #ff6600;
+    }
+  }
+  
+  /* Form Section */
+  .forform {
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .forform .cocktailsearch {
+    padding: 15px 25px;
+    width: 80%;
+    font-size: 1.5rem;
+    border: 3px solid #ffcc00; /* Neon yellow border */
+    border-radius: 5px;
+    background: #333; /* Dark background */
+    color: #fff;
+    box-shadow: 0 0 10px #ffcc00;
+    outline: none;
+    transition: 0.3s ease;
+  }
+  
+  .forform .cocktailsearch::placeholder {
+    color: #bbb;
+  }
+  
+  .forform .cocktailsearch:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 15px #ff6600;
+  }
+  
+  /* Cocktail Display Section */
+  .showcocktail {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+  }
+  
+    .container{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 25px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  .showcocktail .item1 {
+    background: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transform: scale(1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .showcocktail .item1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffcc00, 0 0 40px #ff9900;
+  }
+  
+  .showcocktail .item1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #ff9900; /* Neon border */
+  }
+  
+  .showcocktail .name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffcc00; /* Neon yellow */
+    margin: 15px 0 5px;
+  }
+  
+  .showcocktail .tags {
+    font-size: 1rem;
+    color: #f39c12; /* Golden tags */
+    margin: 5px 0;
+  }
+  
+  .showcocktail .IBA {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-bottom: 10px;
+  }
+  

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect, useState} from 'react'
+import { useParams ,NavLink} from 'react-router-dom'
 import './Mealinfo.css'
 
 const Mealinfo = () => {
@@ -23,6 +23,7 @@ fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)
   
   return (
     <div className='mealinfo'>
+        <NavLink to="/meal"><button>Close</button></NavLink>
  <div className="info">
     <div>Meal Detail</div>
     <div className="first">

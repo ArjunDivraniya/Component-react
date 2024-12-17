@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import './meal.css'
+import Mealinfo from './Mealinfo'
 
 const Meel = () => {
   const [meal ,setMeal]=useState([])
